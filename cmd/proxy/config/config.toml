@@ -65,9 +65,11 @@
 # List of Observers. If you want to define a metachain observer (needed for validator statistics route) use
 # shard id 4294967295
 # Fallback observers which are only used when regular ones are offline should have IsFallback = true
+# Snapshotless observers are observers that can only respond to real-time requests, such as vm queries. They should have IsSnapshotless = true
 [[Observers]]
    ShardId = 0
    Address = "http://65.108.7.21:8080"
+   IsSnapshotless = false
 
 [[Observers]]
    ShardId = 1
@@ -76,27 +78,32 @@
 [[Observers]]
    ShardId = 2
    Address = "http://65.108.7.21:8082"
+   IsFallback = false
 
 [[Observers]]
    ShardId = 4294967295
    Address = "http://65.108.7.21:8083"
+   IsFallback = false
 
 [[Observers]]
    ShardId = 0
    Address = "http://65.108.199.150:8080"
+   IsFallback = false
 
 [[Observers]]
    ShardId = 1
    Address = "http://65.108.199.150:8081"
+   IsFallback = false
 
 [[Observers]]
    ShardId = 2
    Address = "http://65.108.199.150:8082"
-
+   IsFallback = false
+   
 [[Observers]]
    ShardId = 4294967295
    Address = "http://65.108.199.150:8083"
-
+   IsFallback = false
 # [[Observers]]
 #    ShardId = 0
 #    Address = "http://95.217.199.102:8080"
