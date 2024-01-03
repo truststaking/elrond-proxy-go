@@ -69,6 +69,7 @@
 [[Observers]]
    ShardId = 0
    Address = "http://65.108.7.21:8080"
+   IsFallback = false
    IsSnapshotless = false
 
 [[Observers]]
@@ -93,21 +94,25 @@
    ShardId = 0
    Address = "http://65.108.199.150:8080"
    IsFallback = false
+   IsSnapshotless = false
 
 [[Observers]]
    ShardId = 1
    Address = "http://65.108.199.150:8081"
    IsFallback = false
+   IsSnapshotless = false
 
 [[Observers]]
    ShardId = 2
    Address = "http://65.108.199.150:8082"
    IsFallback = false
+   IsSnapshotless = false
    
 [[Observers]]
    ShardId = 4294967295
    Address = "http://65.108.199.150:8083"
    IsFallback = false
+   IsSnapshotless = false
 
 # [[Observers]]
 #    ShardId = 0
