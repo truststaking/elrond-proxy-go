@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"math/big"
 	"net/http"
+	"strings"
 
 	"github.com/multiversx/mx-chain-core-go/core"
 	"github.com/multiversx/mx-chain-core-go/core/check"
@@ -770,6 +771,10 @@ func (tp *TransactionProcessor) groupTxsByShard(txs []*data.Transaction) map[uin
 }
 
 func (tp *TransactionProcessor) checkTransactionFields(tx *data.Transaction) error {
+	if strings.Contains(string(tx.Data), "MigrateDataTrie") {
+		return ErrSendingRequest
+	}
+
 	_, err := tp.pubKeyConverter.Decode(tx.Sender)
 	if err != nil {
 		return &errors.ErrInvalidTxFields{
