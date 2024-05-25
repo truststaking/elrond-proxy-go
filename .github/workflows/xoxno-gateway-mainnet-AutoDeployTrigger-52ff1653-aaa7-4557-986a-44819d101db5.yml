@@ -41,7 +41,5 @@ jobs:
           containerAppName: xoxno-gateway-mainnet
           resourceGroup: XOXNO
           imageToBuild: xoxno.azurecr.io/xoxno-gateway-mainnet:${{ github.sha }}
-          _buildArgumentsKey_: |
-            _buildArgumentsValues_
 
 

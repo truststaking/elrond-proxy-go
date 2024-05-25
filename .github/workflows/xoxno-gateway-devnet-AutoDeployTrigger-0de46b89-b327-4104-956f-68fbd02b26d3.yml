@@ -41,7 +41,6 @@ jobs:
           containerAppName: xoxno-gateway-devnet
           resourceGroup: XOXNO
           imageToBuild: xoxno.azurecr.io/xoxno-gateway-devnet:${{ github.sha }}
-          _buildArgumentsKey_: |
-            _buildArgumentsValues_
+          dockerfilePath: Dockerfile.devnet
 
 
