@@ -1,0 +1,47 @@
+name: Trigger auto deployment for xoxno-gateway-mainnet
+
+# When this action will be executed
+on:
+  # Automatically trigger it when detected changes in repo
+  push:
+    branches: 
+      [ master ]
+    paths:
+    - '**'
+    - '.github/workflows/xoxno-gateway-mainnet-AutoDeployTrigger-52ff1653-aaa7-4557-986a-44819d101db5.yml'
+
+  # Allow manual trigger 
+  workflow_dispatch:      
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions: 
+      id-token: write #This is required for requesting the OIDC JWT Token
+      contents: read #Required when GH token is used to authenticate with private repo
+
+    steps:
+      - name: Checkout to the branch
+        uses: actions/checkout@v2
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.XOXNOGATEWAYMAINNET_AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.XOXNOGATEWAYMAINNET_AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.XOXNOGATEWAYMAINNET_AZURE_SUBSCRIPTION_ID }}
+
+      - name: Build and push container image to registry
+        uses: azure/container-apps-deploy-action@v2
+        with:
+          appSourcePath: ${{ github.workspace }} 
+          registryUrl: xoxno.azurecr.io
+          registryUsername: ${{ secrets.XOXNOGATEWAYMAINNET_REGISTRY_USERNAME }}
+          registryPassword: ${{ secrets.XOXNOGATEWAYMAINNET_REGISTRY_PASSWORD }}
+          containerAppName: xoxno-gateway-mainnet
+          resourceGroup: XOXNO
+          imageToBuild: xoxno.azurecr.io/xoxno-gateway-mainnet:${{ github.sha }}
+          _buildArgumentsKey_: |
+            _buildArgumentsValues_
+
+
