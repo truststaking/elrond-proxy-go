@@ -68,19 +68,19 @@
 [[Observers]]
    ShardId = 0
    Address = "http://65.21.170.198:8080"
-   IsSnapshotless = true
+   # IsSnapshotless = true
 
 [[Observers]]
    ShardId = 1
    Address = "http://65.21.170.198:8081"
-   IsSnapshotless = true
+   # IsSnapshotless = true
 
 [[Observers]]
    ShardId = 2
    Address = "http://65.21.170.198:8082"
-   IsSnapshotless = true
+   # IsSnapshotless = true
 
 [[Observers]]
    ShardId = 4294967295
    Address = "http://65.21.170.198:8083"
-   IsSnapshotless = true
+   # IsSnapshotless = true
