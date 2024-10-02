@@ -22,10 +22,10 @@ jobs:
 
     steps:
       - name: Checkout to the branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Azure Login
-        uses: azure/login@v1
+        uses: azure/login@v2
         with:
           client-id: ${{ secrets.XOXNOGATEWAYDEVNET_AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.XOXNOGATEWAYDEVNET_AZURE_TENANT_ID }}
@@ -39,7 +39,7 @@ jobs:
           registryUsername: ${{ secrets.XOXNOGATEWAYDEVNET_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.XOXNOGATEWAYDEVNET_REGISTRY_PASSWORD }}
           containerAppName: xoxno-gateway-devnet
-          resourceGroup: XOXNO
+          resourceGroup: XOXNODev
           imageToBuild: xoxno.azurecr.io/xoxno-gateway-devnet:${{ github.sha }}
           dockerfilePath: Dockerfile.devnet
 
