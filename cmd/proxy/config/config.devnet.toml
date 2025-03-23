@@ -67,20 +67,20 @@
 # Fallback observers which are only used when regular ones are offline should have IsFallback = true
 [[Observers]]
    ShardId = 0
-   Address = "http://65.21.170.198:8080"
-   # IsSnapshotless = true
+   Address = "http://152.53.231.120:8080"
+   IsSnapshotless = true
 
 [[Observers]]
    ShardId = 1
-   Address = "http://65.21.170.198:8081"
-   # IsSnapshotless = true
+   Address = "http://152.53.231.120:8081"
+   IsSnapshotless = true
 
 [[Observers]]
    ShardId = 2
-   Address = "http://65.21.170.198:8082"
-   # IsSnapshotless = true
+   Address = "http://152.53.231.120:8082"
+   IsSnapshotless = true
 
 [[Observers]]
    ShardId = 4294967295
-   Address = "http://65.21.170.198:8083"
-   # IsSnapshotless = true
+   Address = "http://152.53.231.120:8083"
+   IsSnapshotless = true
