@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Tue Aug  8 16:23:59 2023
+# Make data base, printed on Wed Apr  2 20:07:57 2025
 
 # Variables
 
@@ -21,25 +21,26 @@ make: *** No rule to make target `all'.  Stop.
 # environment
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # environment
-NVM_INC = /Users/truststaking/.nvm/versions/node/v18.15.0/include/node
+NVM_INC = /Users/mihaieremia/.nvm/versions/node/v23.3.0/include/node
+ 
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
+# environment
+CPPFLAGS = -I/opt/homebrew/opt/openjdk/include
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/truststaking/Documents/GitHub/mihai/elrond-proxy-go
+CURDIR := /Users/mihaieremia/GitHub/elrond-proxy-go
 # makefile (from `Makefile', line 1)
 SHELL := /bin/bash
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-gb","osLocale":"en-ro","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/Applications/Visual Studio Code.app/Contents/Resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
-# environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
@@ -47,41 +48,33 @@ INFOPATH = /opt/homebrew/share/info:
 # environment
 VSCODE_CWD = /
 # environment
-GOPROXY = https://proxy.golang.org,direct
+PATH = /Users/mihaieremia/.docker/bin:/Users/mihaieremia/.cargo/bin:/opt/homebrew/opt/llvm/bin:/opt/homebrew/opt/openjdk/bin:/Users/mihaieremia/.nvm/versions/node/v23.3.0/bin:/Users/mihaieremia/development/flutter/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/go/bin:/Users/mihaieremia/.cargo/bin:/Users/mihaieremia/.local/bin:/Users/mihaieremia/.local/bin:/Users/mihaieremia/.pub-cache/bin
 # environment
-PATH = /Users/truststaking/multiversx-sdk/vendor-rust/bin:/Users/truststaking/.cargo/bin:/Users/truststaking/multiversx-sdk:/Users/truststaking/.volta/bin:/Users/truststaking/multiversx-sdk/vendor-rust/bin:/Users/truststaking/multiversx-sdk:/Users/truststaking/.volta/bin:/Users/truststaking/multiversx-sdk:/Users/truststaking/.nvm/versions/node/v18.15.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/truststaking/.pub-cache/bin:/Applications/Android Studio.app/Contents/jbr/Contents/Home/bin:/Applications/Android Studio.app/Contents/jbr/Contents/Home/bin
-# environment
-GOPATH = /Users/truststaking/go
-# environment
-NVM_BIN = /Users/truststaking/.nvm/versions/node/v18.15.0/bin
+NVM_BIN = /Users/mihaieremia/.nvm/versions/node/v23.3.0/bin
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.N3EYq6I60M/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.OQfASB7TsS/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-PWD = /Users/truststaking/Documents/GitHub/mihai/elrond-proxy-go
+PWD = /Users/mihaieremia/GitHub/elrond-proxy-go
 # environment
 HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-MANPATH = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man:/Users/truststaking/.nvm/versions/node/v18.15.0/share/man:/opt/homebrew/share/man::
+MANPATH = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man:
 # environment
-GOMODCACHE = /Users/truststaking/go/pkg/mod
-# environment
-HOME = /Users/truststaking
+HOME = /Users/mihaieremia
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/truststaking/Library/Application Support/Code/CachedData/2ccd690cbff1569e4a83d7c43d45101f817401dc
+VSCODE_CODE_CACHE_PATH = /Users/mihaieremia/Library/Application Support/Code/CachedData/ddc367ed5c8936efe395cffeec279b04ffd7db78
 # environment
-LOGNAME = truststaking
-# environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+LOGNAME = mihaieremia
 # environment
 NVM_CD_FLAGS = -q
 # environment
@@ -97,13 +90,11 @@ MAKECMDGOALS := all
 # environment
 SHLVL = 1
 # environment
-VOLTA_HOME = /Users/truststaking/.volta
-# environment
-JAVA_HOME = /Applications/Android Studio.app/Contents/jbr/Contents/Home
+VSCODE_ESM_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # default
 MAKE_VERSION := 3.81
 # environment
-USER = truststaking
+USER = mihaieremia
 # makefile (from `Makefile', line 3)
 .DEFAULT_GOAL := help
 # automatic
@@ -113,11 +104,11 @@ MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # default
 .VARIABLES := 
 # environment
-TMPDIR = /var/folders/x5/v4xcxnpx3z78h776pbsp8v7m0000gn/T/
+TMPDIR = /var/folders/t2/ng7711r55nnb5_52yxw27f7w0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/truststaking/Library/Application Support/Code/1.80-main.sock
+VSCODE_IPC_HOOK = /Users/mihaieremia/Library/Application Support/Code/1.98-main.sock
 # environment
 MallocNanoZone = 0
 # makefile (from `Makefile', line 17)
@@ -128,12 +119,13 @@ binary = proxy
 MAKEFLAGS = Rrqp
 # environment
 MFLAGS = -Rrqp
+ 
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-NVM_DIR = /Users/truststaking/.nvm
+NVM_DIR = /Users/mihaieremia/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.118707730.118707737
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.126261741.126261761
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -159,13 +151,13 @@ SUFFIXES :=
 # environment
 MAKELEVEL := 0
 # environment
+GPG_TTY = not a tty
+# environment
 LANG = C
 # environment
-VSCODE_PID = 47426
-# environment
-NPM_TOKEN = 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
+VSCODE_PID = 81137
 # variable set hash-table stats:
-# Load=75/1024=7%, Rehash=0, Collisions=2/101=2%
+# Load=70/1024=7%, Rehash=0, Collisions=1/96=1%
 
 # Pattern-specific Variable Values
 
@@ -173,9 +165,9 @@ NPM_TOKEN = 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
 
 # Directories
 
-# . (device 16777234, inode 40608266): 26 files, no impossibilities.
+# . (device 16777233, inode 795112): 27 files, no impossibilities.
 
-# 26 files, no impossibilities in 1 directories.
+# 27 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -206,7 +198,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2023-08-03 19:22:14
+#  Last modified 2024-01-23 02:34:37
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -282,7 +274,6 @@ run: build
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
- 
-# Finished Make data base on Tue Aug  8 16:23:59 2023
+# Finished Make data base on Wed Apr  2 20:07:57 2025
 
  
